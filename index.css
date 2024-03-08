@@ -1,0 +1,276 @@
+body {
+  background-color: black;
+  color: white;
+  /* background-color: gray; */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*5lyavS59mazOFnb55Z6znQ.png);
+  height: 80vh;
+  position: relative;
+  background-size: cover;
+  padding-top: 18px;
+}
+
+.main .box {
+  background-color: black;
+  height: 80vh;
+  width: 100%;
+  opacity: 0.44;
+  top: 0;
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+  justify-content: space-between;
+  height: 32px;
+}
+nav #img {
+  color: red;
+  width: 150px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1;
+  z-index: 10;
+  position: relative;
+  gap: 23px;
+  padding: 0px 30px;
+}
+.hero span {
+  text-align: center;
+}
+
+.sepration {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+.input input {
+  padding: 18px 145px 18px 19px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.first {
+  /* background-color: grey; */
+  height: 80vh;
+}
+.first {
+  display: flex;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+.secImg video {
+  position: absolute;
+  right: 0;
+  top: 55px;
+  width: 555px;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+.freq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.freq #big {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  padding-top: 45px;
+}
+.faqbox {
+  transition: all 1s ease-out;
+  /* font-size: 24px; */
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 70vw;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+.mid {
+  text-align: center;
+  padding-top: 50px;
+}
+.mid p {
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .secImg img {
+    width: 305px;
+  }
+
+  .secImg video {
+    width: 305px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  footer {
+    max-width: 90vw;
+    padding: 75px 0;
+  }
+
+  .footer-item {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
